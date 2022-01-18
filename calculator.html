@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Sobre Mi</a>
+        <a href="calculator.html">Calculadora</a>
+        <a href="gallery.html">Galleria</a>
+        <a href="listado.html">Listado</a>
+    </div>
+    <div id="main">
+        <span class="header" onclick="openNav()">&#9776; menu</span>
+    </div>
+    <script src="sidebar.js"></script>
+    <section>
+        <div class="container">
+            <div class="card">
+                <h1  class="h1-card">La Historia de la Calculadora</h1>
+                <p class="parrafo"  style="initial-letter: capitalize;">
+                    En 1623, el alemán Wilhelm Schickard fue quien creó el primer dispositivo capaz de realizar operaciones aritméticas.</br>
+                    Esta máquina automática era un aparato grande lleno de palancas que podía sumar y restar números de hasta seis dígitos.
+                    El 'reloj calculador' como se le conocía puede ser considerado la primera calculadora mecánica de nuestra historia. Sin embargo
+                    no se tuvo constancia de ella hasta tres siglos después, en 1957, cuando el historiador Franz Hammer descubrió unas cartas
+                    que Schickard escribió a su buen amigo Johannes Kepler en las que le explicaba el mecanismo del funcionamiento de este aparato 
+                    y adjuntaba bocetos de como era.</br>
+                    Más tarde, en 1642 en Ruan, una ciudad del noroeste de Francia, Blaise Pascal se interesó por diseñar y construir una máquina de sumar a la que bautizó 'Pascalina'
+                    y con la que se podia realizar las cuatro operaciones matemáticas básicas (sumar, restar, multiplicar y dividir).
+                    La 'Pascalina' se utilizó tal y como su creador la había presentado hasta 1902 cuando James L.Dalton cambió las palancas que 
+                    la componían por botones, mejorando su diseño y haciéndola más funcional. De esta primera calculadora se conservan viejos ejemplares que han influido en las posteriores 
+                    calculadoras mecánicas.</br>
+
+                    Ninguna calculadora ssustituyyó a la 'Pascalina' (que se tenga constancia) hasta mediados del siglo XX cuando en Austria, Curt Herzstark fabrico la calculadora mecánica compacta,
+                    cabía en una mano y esa portabilidad ayudó a aumentar sus ventas, pese a su elevado precio. Al igual que su precursora, con esta máquina se podía sumar, restar, multiplicar y dividir.</br>
+
+                    A mediados de los 50, IBM presentó una calculadora de considerables dimensiones (¡con el tamaño de un escritorio!) basada en transistores. A finales de esta década, IBM y Casio lanzaron sus primeras calculadoras comerciales, la IBM 608 y la 14-A, respectivamente.</br>
+
+                    A pesar de ser coetáneas existían dos diferencias entre ellas, ya que solo Casio lanzó un modelo totalmente compacto y eléctrico (basada en un relé) que iba integrada dentro de un escritorio. Por su parte, la de IBM era electrónica (basada en una placa lógica) y había que almacenarla en distintas salas y su precio era bastante elevado, unos 80.000 dólares. </br>
+
+                    La primera calculadora totalmente electrónica fue hecha en 1961 por la compañia británica Bell Punch, llamada 'Sumlock Comptometer ANITA'. </br>
+
+                    En 1970 Sanyo, Canon y Sharp lanzaron al mercado calculadoras portátiles con pilas (Sanyo ICC-0081, La Canon Pocketronic y la Sharp QT.8B) que se vendieron por todo el mundo con muchísima rapidez. </br>
+
+                    Tan solo un año después se desarrolló la primera 'calculadora en un chip' con el nombre de MK6010 de Mostek. En ese mismo año, Texas Instruments lanzó una nueva calculadora que se convirtió en el modelo para las calculadoras alrededor del mundo. Eran muy caras pero gracias a los avances tecnológicos en unos pocos años estuvieron al alcance del bolsillo de muchos. </br>
+
+                </p>
+                <h1 class="h1-card">La Calculadora Científica</h1>
+                <p class="parrafo">
+                    La primera calculadora científica fue lanzada sólo dos años después, en 1973, por Texas Instruments. La SR-10 costaba unos 150 dólares y ya incluía un botón para 'p' (pi). Con el paso de los años fue completándose con funciones logarítmicas o trigonometría. </br>
+
+                    En 1980 aparecieron las primeras calculadoras financieras y fue en ese emomento cuado las compañias centraron sus esfuerzos en su desarrolo para mejorarlas, iniciándose una carrera por sacar al mercado la mejor calculadora. Este hecho ha permitido que podamos disfrutar de ellas en casi cualquier dispositivo electrónico, desde un reloj hasta un teléfono móvil.</br>
+
+                    A finales del siglo XX, gracias a tecnologías como la del Sensor CMOS(sensor que detecta la luz) y de paneles solares, salieron al mercado calculadoras programables o sin necesidad de pilas. El avance continuo de las tecnologías ha permitido mejorar estos aparatos añadiendo derivadas, integrales, ecuaciones diferenciales y todo tipo de operaciones, llevando las matemáticas a nuestros bolsillos y haciendo nuestras vidas más fáciles.
+                </p>
+            </div>
+            <div class="container-calculator">
+                <p>made in chile</p>
+                <div id="display"></div>
+                <div class="buttons">
+                    <div class="button">C</div>
+                    <div class="button">/</div>
+                    <div class="button">*</div>
+                    <div class="button">&larr;</div>
+                    <div class="button">7</div>
+                    <div class="button">8</div>
+                    <div class="button">9</div>
+                    <div class="button">-</div>
+                    <div class="button">4</div>
+                    <div class="button">5</div>
+                    <div class="button">6</div>
+                    <div class="button">+</div>
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
+                    <div class="button">.</div>
+                    <div class="button">(</div>
+                    <div class="button">0</div>
+                    <div class="button">)</div>
+                    <div id="equal" class="button">=</div>
+                </div>
+                <p>calculator's francisco guerra</p>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <script src="calculator.js"></script>
+
+    <footer class="footer">
+        <svg viewBox="0 0 120 28">
+            <defs>
+                <mask id="xxx">
+                    <circle cx="7" cy="12" r="40" fill="#fff" />
+                </mask>
+
+                <filter id="goo">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="
+                      1 0 0 0 0  
+                      0 1 0 0 0  
+                      0 0 1 0 0  
+                      0 0 0 13 -9" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+                <path id="wave"
+                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+            </defs>
+
+            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
+            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
+
+            <!-- <g class="topball">
+                <circle class="ball" cx="110" cy="8" r="4" stroke="none" stroke-width="0" fill="red" />
+                
+                <g class="arrow">
+                    <polyline class="" points="108,8 110,6 112,8" fill="none" />
+                    <polyline class="" points="110,6 110,10.5" fill="none" />
+                </g>
+
+            </g> -->
+            <g class="gooeff">
+                <circle class="drop drop1" cx="20" cy="2" r="1.8" />
+                <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
+                <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
+                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+
+                <!-- g mask="url(#xxx)">
+               <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+               </g>
+             </g -->
+
+        </svg>
+
+        <div>
+            <marquee><p>Hecho con &#x1F497 por @Francisco Guerra - Hecho con &#x1F497 por @Francisco Guerra - Hecho con &#x1F497 por @Francisco Guerra</p>
+
+            </marquee>
+        </div>
+    </footer>
+</body>
+
+</html>
