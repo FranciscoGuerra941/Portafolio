@@ -34,7 +34,7 @@
     
 }
 
-.drop-glass::before{
+.drop-glass:before{
     content: ' ';
     position: absolute;
     top: 55px;
@@ -46,7 +46,7 @@
     transform: skewX(-10deg);
 }
 
-.drop-glass::after{
+.drop-glass:after{
     content: ' ';
     position: absolute;
     top: 25px;
@@ -140,6 +140,7 @@ to {
       border-radius: 50%;
       border: solid 0.2rem rgb(170, 0, 0);
       animation: rotate 5s ease-in-out infinite;
+      -ms-zoom-animation: rotate 5s ease-in-out infinite;
 
   }
   
@@ -149,6 +150,13 @@ to {
           rotate(60deg)
         ;
       }
+  }
+  @-moz-keyframes rotate{
+    50%{
+        transform:
+        rotate(60deg)
+      ;
+    }
   }
   
 
