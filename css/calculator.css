@@ -1,0 +1,197 @@
+/* Inicio Pagina Calculadora */
+.v{
+    height: 98vh;
+    padding: 0;
+    margin: 0;
+}
+.container-c{
+
+    max-width: 70rem;
+    margin: 0 auto 0 auto;
+    background: rgba(255, 255, 255, 0.5);
+    padding:5rem 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.card{
+
+    /* width: 30rem; */
+    max-width: 30rem;
+    /* min-height: 34rem; */
+    height: 40rem;
+    /* max-height: 34rem; */
+
+    background: #ffffff;
+    box-shadow:5px 5px 2px 1px rgb(139, 139, 139)
+    ,inset 2px 2px 3px 2px rgb(177, 255, 141)
+    ;
+    position: relative;
+    margin: 1rem auto 1rem auto;
+    padding: 1rem;
+    /* text-align: center; */
+    overflow: scroll;
+}
+
+.container-c .card .h1-card{
+    margin: 1rem 0;
+    color: rgb(10, 10, 10);
+}
+
+.container-c .card .parrafo{
+    font-size: 1.1rem;
+    text-align: justify;
+    color: rgb(10, 10, 10);
+}
+
+
+
+.container-calculator{  
+    width: 20rem;
+    height: 35rem;
+    margin: 1rem auto 1rem auto;
+    box-shadow: inset 3px 3px 5px rgb(128, 128, 128),
+    inset -25px -25px 20px rgb(0, 0, 0);
+    border-radius: 0.5rem 0.5rem ;
+    background: linear-gradient(120deg,rgb(39, 39, 41), rgb(17, 16, 16));
+    font-size: 1.5rem;
+    padding: 1rem;
+    position: relative;
+}
+
+.container-calculator:before{
+    content: ' ';
+    position: absolute;
+    top: 0.7rem;
+    left: 1.7rem; 
+    width: 1rem;
+    height: 1rem;
+    background: linear-gradient(45deg,rgb(144, 39, 39),rgb(92, 19, 19));
+    box-shadow: 1.2rem 0 0 0 rgb(124, 19, 19)
+    ,2.4rem 0 0 0 rgb(124, 22, 22)
+    ,3.6rem 0 0 0 rgb(121, 13, 13)
+    ;
+
+}
+.container-calculator:after{
+    content: ' ';
+    position: absolute;
+    top: 0.45rem;
+    left: 1.35rem; 
+    width: 5rem;
+    height: 1.3rem;
+    border: solid 0.1rem rgb(66, 66, 66);
+ 
+}
+
+.container-calculator p{
+    text-align: center;
+    margin: 0.5rem 0 0 0 ;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    user-select: none;
+    color: white;
+    transform: translateY(-0.2rem);
+}
+
+#display{
+    text-align: center;
+    height: 70px;
+    line-height: 70px;
+    margin:  0 0 3rem 0 ;
+    font-size: 25px;
+    border-radius: 0.3rem 0.3rem;
+    background: rgb(40, 40, 44);
+    color: white;
+    border: solid 5px rgb(90, 90, 90);
+    position: relative;
+}
+.display:before{
+    content: ' ';
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    width: 0.2rem;
+    height: 0.5rem;
+    background: white;
+    box-shadow: 0.4rem 0 0 0 white
+    ,0.8rem 0 0 0 white
+    ;
+}
+.display:after{
+    border: solid 1px white;
+    content: ' ';
+    position: absolute;
+    top: 0.2rem;
+    left: 0.3rem;
+    width: 1.3rem;
+    height: 0.6rem;
+    border: solid 1px white;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    grid-auto-rows: 4rem;
+    grid-auto-columns: 4rem;;
+     user-select: none;
+}
+
+.button{
+    border-radius: 0.5rem;
+    display: grid;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    box-shadow:  inset -8px 0 8px rgba(0, 0, 0, 0.15),
+        inset 0 -8px 8px rgba(0, 0, 0, 0.25),
+        0 0 0 2px rgba(0, 0, 0, 0.75),
+        10px 20px 25px rgba(0, 0, 0, 0.4);
+        overflow: hidden;
+    
+}
+.button .p-button{
+  z-index: 1;
+  font-size: 1.5rem;
+  transform: translateY(-0.4rem);
+}
+
+.buttons .button:before{
+  content: '';
+    position: absolute;
+    top: 3px;
+    left: 4px;
+    bottom: 7px;
+    right: 5px;
+    background: linear-gradient(90deg, #232323, #4a4a4a);
+    border-radius: 10px;
+    box-shadow: -5px -5px 10px rgba(255,255,255,0.25),
+    10px 5px 10px rgba(0,0,0,0.15);
+    border-top: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-left: 1px solid #0004;
+}
+
+#equal{
+    background-color: #5555ff;
+    color: white;
+}
+
+.button:hover{
+    background-color: #4a4a4a;
+    color: #f3ff84;
+    transition: 0.1s ease-in-out;
+}
+
+.button:active{
+    transform: scale(0.95);
+    transition: 0s ;
+}
+
+
+/* Fin Pagina Calculadora*/

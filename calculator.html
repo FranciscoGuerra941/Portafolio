@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Calculator</title>
 </head>
 
@@ -15,13 +15,14 @@
         <a href="calculator.html">Calculadora</a>
         <a href="gallery.html">Galleria</a>
         <a href="listado.html">Listado</a>
+        <a href="3d.html">3D(only desktop) </a>
     </div>
     <div id="main">
         <span class="header" onclick="openNav()">&#9776; menu</span>
     </div>
-    <script src="sidebar.js"></script>
-    <section>
-        <div class="container">
+    <script src="js/sidebar.js"></script>
+    <section class="v">
+        <div class="container-c">
             <div class="card">
                 <h1  class="h1-card">La Historia de la Calculadora</h1>
                 <p class="parrafo"  style="initial-letter: capitalize;">
@@ -62,88 +63,43 @@
             </div>
             <div class="container-calculator">
                 <p>made in chile</p>
-                <div id="display"></div>
+                <div id="display" class="display"></div>
                 <div class="buttons">
-                    <div class="button">C</div>
-                    <div class="button">/</div>
-                    <div class="button">*</div>
-                    <div class="button">&larr;</div>
-                    <div class="button">7</div>
-                    <div class="button">8</div>
-                    <div class="button">9</div>
-                    <div class="button">-</div>
-                    <div class="button">4</div>
-                    <div class="button">5</div>
-                    <div class="button">6</div>
-                    <div class="button">+</div>
-                    <div class="button">1</div>
-                    <div class="button">2</div>
-                    <div class="button">3</div>
-                    <div class="button">.</div>
-                    <div class="button">(</div>
-                    <div class="button">0</div>
-                    <div class="button">)</div>
-                    <div id="equal" class="button">=</div>
+                    <div class="button"><p class="p-button">C</p></div>
+                    <div class="button"><p class="p-button">/</p></div>
+                    <div class="button"><p class="p-button">*</p></div>
+                    <div class="button"><p class="p-button">&larr;</p></div>
+                    <div class="button"><p class="p-button">7</p></div>
+                    <div class="button"><p class="p-button">8</p></div>
+                    <div class="button"><p class="p-button">9</p></div>
+                    <div class="button"><p class="p-button">-</p></div>
+                    <div class="button"><p class="p-button">4</p></div>
+                    <div class="button"><p class="p-button">5</p></div>
+                    <div class="button"><p class="p-button">6</p></div>
+                    <div class="button"><p class="p-button">+</p></div>
+                    <div class="button"><p class="p-button">1</p></div>
+                    <div class="button"><p class="p-button">2</p></div>
+                    <div class="button"><p class="p-button">3</p></div>
+                    <div class="button"><p class="p-button">.</p></div>
+                    <div class="button"><p class="p-button">(</p></div>
+                    <div class="button"><p class="p-button">0</p></div>
+                    <div class="button"><p class="p-button">)</p></div>
+                    <div id="equal" class="button"><p class="p-button">=</p></div>
                 </div>
-                <p>calculator's francisco guerra</p>
+                <p>Francisco Guerra's Calculator</p>
             </div>
 
         </div>
         </div>
     </section>
-    <script src="calculator.js"></script>
+    <script src="js/calculator.js"></script>
 
     <footer class="footer">
-        <svg viewBox="0 0 120 28">
-            <defs>
-                <mask id="xxx">
-                    <circle cx="7" cy="12" r="40" fill="#fff" />
-                </mask>
-
-                <filter id="goo">
-                    <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
-                    <feColorMatrix in="blur" mode="matrix" values="
-                      1 0 0 0 0  
-                      0 1 0 0 0  
-                      0 0 1 0 0  
-                      0 0 0 13 -9" result="goo" />
-                    <feBlend in="SourceGraphic" in2="goo" />
-                </filter>
-                <path id="wave"
-                    d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-            </defs>
-
-            <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2"></use>
-            <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0"></use>
-
-            <!-- <g class="topball">
-                <circle class="ball" cx="110" cy="8" r="4" stroke="none" stroke-width="0" fill="red" />
-                
-                <g class="arrow">
-                    <polyline class="" points="108,8 110,6 112,8" fill="none" />
-                    <polyline class="" points="110,6 110,10.5" fill="none" />
-                </g>
-
-            </g> -->
-            <g class="gooeff">
-                <circle class="drop drop1" cx="20" cy="2" r="1.8" />
-                <circle class="drop drop2" cx="25" cy="2.5" r="1.5" />
-                <circle class="drop drop3" cx="16" cy="2.8" r="1.2" />
-                <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
-
-                <!-- g mask="url(#xxx)">
-               <path   id="wave1"  class="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
-               </g>
-             </g -->
-
-        </svg>
-
-        <div>
-            <marquee><p>Hecho con &#x1F497 por @Francisco Guerra - Hecho con &#x1F497 por @Francisco Guerra - Hecho con &#x1F497 por @Francisco Guerra</p>
-
-            </marquee>
-        </div>
-    </footer>
+        <marquee class="marquee">
+            <p class="p-footer">Hecho con &#x1F497 por @Francisco Guerra - Hecho con &#x1F497 por @Francisco Guerra - Hecho con
+                &#x1F497 por @Francisco Guerra</p>
+        </marquee>
+</footer>
 </body>
 
 </html>

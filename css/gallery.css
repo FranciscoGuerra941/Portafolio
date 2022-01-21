@@ -1,0 +1,105 @@
+/* Inicio Galeria */
+
+/* Center website */
+.main {
+    max-width: 60rem;
+    margin: auto;
+  }
+  #myBtnContainer{
+    margin: 1rem auto;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+    word-break: break-all;
+    text-align: center;
+  }
+  h2{
+    text-align: center;
+  }
+  
+  .content h4{
+    padding: 0.4rem;
+  }
+  .content p{
+    padding: 0.4rem;
+  }
+  
+  .row {
+    margin: 1rem 0;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 0.5rem;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 31%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  .column:hover{
+    transform: scale(1.05);
+    transition: 1s;
+    filter:saturate(145%) brightness(110%);
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgba(255, 255, 255, 0.5);
+    /* padding: 0.5rem; */
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 0.5rem 0.7rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 1rem;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.1);
+    box-shadow: 0 0 0 0.2rem white;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+  
+  
+  @media (max-width:768px){
+    .column {
+      width: 45%;
+    }
+    
+  }
+  @media (max-width:340px){
+    .column {
+      width: 93%;
+    }
+  }
+  
+  
+  
+  /* Fin Galeria */

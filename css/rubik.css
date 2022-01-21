@@ -1,0 +1,125 @@
+.container-rubik{
+    margin: 10px auto;
+    perspective: 3000px;
+    perspective-origin: 0px -500px;  /* eje X y eje Y */
+    display: flex;
+    justify-content: center;
+
+}
+.container-rubik .cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: girar 5s infinite linear;
+}
+.container-rubik .cubo .cara{
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+
+.container-rubik .cubo #uno{
+    background:crimson;
+    transform: translateZ(100px);
+}
+.pieza{
+    border:solid 1px black;
+    border-radius: 12%;
+    float: left;
+    width: 33.3%;
+    height: 33.3%;
+}
+.container-rubik .cubo #dos{
+    background: darkorange;
+    transform: translateX(100px) rotateY(90deg);
+}
+
+.container-rubik .cubo #tres{
+    background: yellow;
+    transform: translateZ(-100px);
+}
+.container-rubik .cubo #cuatro{
+    background: blue;
+    transform: translateX(-100px) rotateY(90deg);
+}
+.container-rubik .cubo #cinco{
+    
+    background: green;
+    transform: translateY(-100px) rotateX(90deg);
+}
+.container-rubik .cubo #seis{
+    background: honeydew;
+    transform: translateY(100px) rotateX(90deg);
+}
+
+
+.container-cube{
+    margin: 100px auto;
+    perspective: 3000px;
+    perspective-origin: 0px -500px;  /* eje X y eje Y */
+    display: flex;
+    justify-content: center;
+
+}
+.container-cube .cubo{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: girar 5s infinite linear;
+}
+@keyframes girar{
+    from{
+        transform: rotateY(0deg);
+    }
+    to{
+        transform: rotateY(360deg);
+    }
+}
+
+.cara{
+    position:absolute;
+    width: 100%;
+    height:100%;
+}
+
+#uno{
+    background:crimson;
+
+    background: url("img/nico.png");
+    background-size: contain;
+    transform: translateZ(100px);
+
+}
+#dos{
+    background: darkorange;
+    background: url("img/daniel.png");
+    background-size: contain;
+    transform: translateX(100px) rotateY(90deg);
+}
+#tres{
+    background: yellow;
+    background: url("img/pancho.png");
+    background-size: contain;
+    transform: translateZ(-100px);
+}
+#cuatro{
+    background: blue;
+    background: url("img/shompa.png");
+    background-size: contain;
+    transform: translateX(-100px) rotateY(90deg);
+}
+#cinco{
+    
+    background: green;
+    background: url("img/yerko.png");
+    background-size: contain;
+    transform: translateY(-100px) rotateX(90deg);
+}
+#seis{
+    background: honeydew;
+    background: url("img/italo.png");
+    background-size: contain;
+    transform: translateY(100px) rotateX(90deg);
+}

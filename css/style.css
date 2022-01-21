@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:wght@300&display=swap');
+@import url('/Portafolio/css/etc.css');
+@import url('/Portafolio/css/presentacion-1.css');
+@import url('/Portafolio/css/header.css');
+@import url('/Portafolio/css/presentacion-2.css');
+@import url('/Portafolio/css/presentacion-3.css');
+@import url('/Portafolio/css/calculator.css');
+@import url('/Portafolio/css/gallery.css');
+@import url('/Portafolio/css/list.css');
+@import url('/Portafolio/css/3d.css');
+@import url('/Portafolio/css/ringfire.css');
+@import url('/Portafolio/css/rubik.css');
+@import url('/Portafolio/css/loading-conic.css');
+
+
+
+
+*{
+    margin: 0; 
+    padding: 0 ;
+    font-family: 'Piazzolla', serif;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    padding: 0 0 0 0 ;
+    margin: 0 0 0 0;
+    background: linear-gradient(0deg,rgba(255, 0, 0, 0.3),rgba(0, 119, 255, 0.5),rgba(0, 119, 255, 0.5),rgba(255, 0, 0, 0.3));
+    background-size: 300% 300%;
+    animation: backgroundAnimate 10s linear infinite;
+    transition: background-color .5s;
+    box-sizing: border-box;
+}
+@keyframes backgroundAnimate {
+    0%{background-position: 0 0;}
+    50%{background-position: 0 100%;}
+    100%{background-position: 0 0;}
+}
+hr{
+  border: solid 0.01rem #0011ff69;
+}
+
+.footer{
+  position: fixed;
+  border-top: solid 1px black;
+  /* padding-top: 1rem; */
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  /* height: 5vh; */
+  background: rgba(255, 255, 255, 0.473);
+  vertical-align: center;
+}
+
+.marquee{
+  width: 100%;
+  /* height: 5vh; */
+  background: rgba(255, 255, 255, 0.473);
+}
+
+
+
+
+

@@ -1,0 +1,220 @@
+.presentacion-2{
+
+    max-width: 70rem;
+
+    margin: 1rem auto 1rem auto;
+    background: rgba(255, 255, 255, 0.322);
+    padding:3rem;
+    display: flex;
+    flex-wrap: wrap;
+    vertical-align: center;
+    align-items: center;
+    /* overflow: visible; */
+    /* flex-direction:row-reverse; */
+}
+
+/* Flip Card Inicio */
+
+.flip-card {
+    background-color: transparent;
+
+    text-align: center;
+    width: 15rem;   
+    height: 20rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    overflow: visible;
+
+  
+  margin: 1rem auto 1rem auto;
+  /* padding: 1rem; */
+  text-align: center;
+    perspective: 1000px; /*Remove this if you don't want the 3D effect*/
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    box-shadow:0px 0px 2px 1px rgb(139, 139, 139);
+        border: solid 1px black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transform-style: preserve-3d;
+    
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+
+    transform-style: preserve-3d;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    transform-style: preserve-3d;
+    background: url("/Portafolio/img/fotocarnet.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin: 0 auto 0 auto;
+    width: 15rem;   
+    height: 20rem;
+    color: black;
+    bottom: 0;
+  
+    
+  }
+  .flip-card-front p{
+      padding: 1rem 0;
+      
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    transform-style: preserve-3d;
+    background: linear-gradient(45deg,rgb(74, 74, 230),rgb(125, 172, 180));
+    color: white;
+    transform: rotateY(180deg);
+    display: grid;
+    align-items: auto;
+    padding: 5rem 0;
+
+    
+  }
+  
+  /* Flip Card Final */
+  
+  
+  /* Slide In Inicio Slide In Inicio Slide In Inicio Slide In Inicio Slide In Inicio */
+  
+  .container-slider {
+    box-shadow:0px 0px 2px 1px rgb(139, 139, 139);
+    border: solid 1px black;
+    text-align: center;
+    position: relative;
+    width: 15rem;
+    height: 20rem;
+    margin: 1rem auto 1rem auto;
+    background: url("/Portafolio/img/fotocarnet.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    bottom: 0;
+    border: solid 1px black;
+  }
+  .container-slider p{
+    padding: 1rem 0;
+  }
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(45deg,rgb(74, 74, 230),rgb(125, 172, 180));
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+  }
+  
+  .container-slider:hover .overlay {
+    height: 100%;
+  }
+  
+  .text1 {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  /* Slide In Final Slide In Final Slide In Final Slide In Final Slide In Final Slide In Final*/
+  
+  /* CARD THUG LIFE INICIO*/
+  .card-2{
+  
+
+    width: 15rem;
+
+    text-align: center;
+
+    height: 20rem;
+
+    box-shadow:0px 0px 2px 1px rgb(139, 139, 139);
+        border: solid 1px black;
+    background: url("/Portafolio/img/fotocarnet.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat:no-repeat;
+    margin: 1rem auto 1rem auto;
+    color: black;
+    bottom: 0;
+    border: solid 1px black;
+    overflow: hidden;
+    }
+  
+  .card-2 p{
+      padding: 1rem 0 0 0;
+      /* position: absolute; */
+  }
+  
+  .card-2:hover{
+    animation: tiembla 0.1s infinite;
+  }
+  
+  @keyframes tiembla{
+    0%  { -webkit-transform:rotateZ(-2deg);
+      background-color: rgb(255, 0, 0);
+     }
+    50% { -webkit-transform:rotateZ( 0deg) scale(.9);
+      background-color: rgb(38, 255, 0);
+     }
+    100%{ -webkit-transform:rotateZ( 2deg);
+      background-color: rgb(0, 4, 255);
+     }
+  }
+  
+  #glasses{
+    width: 75rem;
+    height: 75rem;
+    transform: translateX(-10rem) translateY(-24rem);
+    overflow: hidden;
+  }
+  
+  #glasses:hover{
+  
+    animation: glassesAnimate 2s ;
+    animation-fill-mode: forwards;
+    content: ' Its Joke ';
+    color: aliceblue;
+    position: absolute;
+  }
+    @keyframes glassesAnimate {
+      0%{
+        transform: translateX(-10rem) translateY(-24rem);
+      }100%{
+        transform: translateX(-35.5rem) translateY(-24rem);
+      }
+    }
+  
+  /* CARD THUG LIFE FINAL*/

@@ -1,0 +1,105 @@
+.container-conic-loader{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: #181818; */
+}
+.conic-loader{
+    width: 200px;
+    height: 200px;
+    /* border: 2px solid whitesmoke; */
+    box-shadow: 16px 14px 20px #0000008c;
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    animation: shadow-move 3s linear infinite;
+}
+.conic-loader::before{
+    content: "";
+    background-image: conic-gradient(
+        rgb(238, 255, 0) 20deg, transparent 120deg);
+    width: 150%;
+    height: 150%;
+    position: absolute;
+    animation: rotate-conic 3s linear infinite;
+    
+}
+
+.conic-loader::after{
+    content: " Cargando..";
+    width: 190px;
+    height: 190px;
+    background:#101010;
+    position: absolute;
+    border-radius: 10px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:rgb(143, 12, 12);
+    font-size: larger;
+    letter-spacing: 5px;
+    box-shadow: inset 20px 20px 20px #0000008c;
+    animation: font-color 3s linear infinite;
+
+}
+@keyframes rotate-conic{
+    0%{
+        transform: rotate(0deg);    
+    }
+    25%{
+        background-image: conic-gradient(
+            rgb(40, 204, 19) 20deg, transparent 120deg);
+    }
+    50%{
+        background-image: conic-gradient(
+        rgb(204, 19, 19) 20deg, transparent 120deg);
+    }
+    75%{
+        background-image: conic-gradient(
+        rgb(25, 0, 255) 20deg, transparent 120deg);
+    }
+    100%{
+        transform:rotate(-360deg);
+    }
+
+}
+
+@keyframes font-color{
+
+    0%{   
+    }
+    25%{
+        
+        color:rgb(40, 204, 19);
+    }
+    50%{
+        color:rgb(204, 19, 19)
+    }
+    75%{
+        color:rgb(25, 0, 255);
+    }
+    100%{
+        color:rgb(255, 238, 0);
+    }
+
+}
+
+@keyframes shadow-move{
+
+    25%{
+        box-shadow: 16px 14px 20px #0000008c;  
+    }
+    50%{
+        box-shadow: 16px 0px 20px #0000008c;
+    }
+    75%{
+        box-shadow: 0px 16px 20px #0000008c;
+    }
+    100%{
+        box-shadow: 16px 14px 20px #0000008c;
+    }
+}
