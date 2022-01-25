@@ -1,17 +1,19 @@
 /* Inicio Pagina Calculadora */
 .v{
-    height: 98vh;
+    height: 100vh;
+    width: 100vw;
     padding: 0;
     margin: 0;
 }
 .container-c{
 
-    max-width: 70rem;
+    max-width: 80rem;
     margin: 0 auto 0 auto;
     background: rgba(255, 255, 255, 0.5);
-    padding:5rem 0;
+    padding:5rem 2rem;
     display: flex;
     flex-wrap: wrap;
+    gap: 5rem;
 }
 
 
