@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Portafolio/css/style.css">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="/Portafolio/index.html">Sobre Mi</a>
+        <a href="/Portafolio/layout/calculator.html">Calculadora</a>
+        <a href="/Portafolio/layout/gallery.html">Galeria</a>
+        <a href="/Portafolio/layout/listado.html">Listado</a>
+        <a href="/Portafolio/layout/3d.html">3D(only desktop) </a>
+    </div>
+
+
+    <div id="main">
+        <span class="header" onclick="openNav()">&#9776; menu</span>
+    </div>
+    <script src="/Portafolio/js/sidebar.js"></script>
+
+
+
+
+
+    <div class="container-form">
+        <div class="form">
+
+            <form action="" method="POST" id="form">
+                <h1>Contacto</h1>
+
+                <section>
+                    <label for="fname">
+                        <h3>Ingrese su Nombre</h3>
+                    </label>
+                    <input type="text" id="fname" name="fname" placeholder="Su Nombre..." required>
+                </section>
+                <section>
+                    <label for="lname">
+                        <h3>Ingrese su Apellido</h3>
+                    </label>
+                    <input type="text" id="lname" name="lname" placeholder="Su Apellido..." required>
+                </section>
+
+                <section>
+                    <label for="email">
+                        <h3>Ingrese su e-mail</h3>
+                    </label>
+                    <input type="email" id="email" name="email" placeholder="Su email..." required>
+                </section>
+
+
+                <section class="textSection">
+                    <label>
+                        <h3> Ingrese Motivo de Contacto</h3>
+                    </label>
+                    <textarea name="textArea" id="textArea" ></textarea>
+                </section>
+
+                <section >
+                    <input type="submit" id="submit" name="submit" value="Enviar Formulario">
+                </section>
+
+
+                <a href="mailto:franciscog941@gmail.com" id="sendid">sendid</a>
+                <script src="/Portafolio/js/form.js"></script>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
