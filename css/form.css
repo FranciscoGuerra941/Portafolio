@@ -1,5 +1,6 @@
 .container-form{
     height: 100vh;
+    min-height: 100%;
     width: 100vw;
     background: rgba(117, 59, 59, 0.781);
     display: grid;
@@ -30,7 +31,7 @@
     padding-bottom: 5rem;
 }
 
-.container-form .form:hover section{
+/* .container-form .form:hover section{
     filter: blur(0.1rem);
     opacity: 0.7;
     transition-duration: 0.5s;
@@ -40,7 +41,7 @@
 .container-form .form section:hover{
     filter: blur(0);
     opacity: 1;
-}
+} */
 
 .container-form .form section input[type=text],
 input[type=password],
@@ -89,6 +90,12 @@ section{
     padding: 1rem;
     font-size: 1.1rem;
     resize: none;
+    border: solid 0.2rem rgb(99, 99, 99);
+    outline: solid 0.1rem yellow;
+}
+
+#textArea:focus{
+    background: rgb(164, 255, 80);
 }
 
 
