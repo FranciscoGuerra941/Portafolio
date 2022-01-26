@@ -9,8 +9,8 @@
 
 
 .container-form .form{
-    height: 80%;
-    width: 95vw;
+    height: 80vh;
+    width: 80vw;
     background: rgba(255, 255, 255, 0.541);
     border: solid 0.1rem black;
     display: flex;
@@ -25,28 +25,27 @@
 
 
 .container-form .form h1{
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 5000;
     padding-bottom: 5rem;
-    margin-top: 4rem;
 }
 
-/* .container-form .form:hover section{
+.container-form .form:hover section{
     filter: blur(0.1rem);
     opacity: 0.7;
     transition-duration: 0.5s;
     
-} */
+}
 
-/* .container-form .form section:hover{
+.container-form .form section:hover{
     filter: blur(0);
     opacity: 1;
-} */
+}
 
 .container-form .form section input[type=text],
 input[type=password],
 input[type=email]{
-    border: solid 0.2rem rgb(161, 142, 142);
+    border: solid 0.2rem rgb(99, 99, 99);
     outline: solid 0.1rem yellow;
     font-size: 1rem;
     width: 100%;
@@ -54,14 +53,11 @@ input[type=email]{
     margin: 0.5rem 0;
 }
 .container-form .form section input[type=submit]{
-    min-width: 10rem;
     width: 50%;
     margin: 0 auto ;
     font-weight: bold;
     border-radius: 2rem;
-    border:solid 0.2rem rgb(98, 98, 98);
-    margin-top: 0.5rem;
-    margin-bottom: 2rem;
+    border:solid 0.2rem rgb(98, 98, 98)
 }
 
 .container-form .form section input:focus
@@ -93,11 +89,6 @@ section{
     padding: 1rem;
     font-size: 1.1rem;
     resize: none;
-    outline: solid 0.1rem yellow;
-    border: solid 0.2rem rgb(161, 142, 142);
-}
-#textArea:hover{
-    
 }
 
 

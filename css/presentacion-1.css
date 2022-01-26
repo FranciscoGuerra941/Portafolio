@@ -60,7 +60,7 @@
 .drop-glass #foto1{
     height: 100%;
     width: 100%;
-    background:url("/img/fotocarnet.png");
+    background:url("/Portafolio/img/fotocarnet.png");
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
