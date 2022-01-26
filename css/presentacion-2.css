@@ -67,7 +67,7 @@
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
     transform-style: preserve-3d;
-    background: url("/Portafolio/img/fotocarnet.png");
+    background: url("/img/fotocarnet.png");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -110,7 +110,7 @@
     width: 15rem;
     height: 20rem;
     margin: 1rem auto 1rem auto;
-    background: url("/Portafolio/img/fotocarnet.png");
+    background: url("/img/fotocarnet.png");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
@@ -162,7 +162,7 @@
 
     box-shadow:0px 0px 2px 1px rgb(139, 139, 139);
         border: solid 1px black;
-    background: url("/Portafolio/img/fotocarnet.png");
+    background: url("/img/fotocarnet.png");
     background-size: cover;
     background-position: center;
     background-repeat:no-repeat;
