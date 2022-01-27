@@ -124,40 +124,34 @@ to {
       font-size: 1rem;
       position: relative;
       padding-top: 1rem;
+      line-height: 2;
   }
 
-  .card-1:before{
+  .card-1:after{
       content: 'Job Wanted';
-      position: absolute;
+      position:absolute;
       font-size: 0.8rem;
       color: rgb(156, 0, 0);
       display: grid;
       align-items: center;
       width: 3.5rem;
       height: 3.5rem;
-      bottom: 0.5rem;
-      right: 0.5rem;
+      transform: translateY(-55px) rotate(0deg);
+      /* bottom: 0.5rem;
+      right: 0.5rem; */
       border-radius: 50%;
       border: solid 0.2rem rgb(170, 0, 0);
       animation: rotate 5s ease-in-out infinite;
-      -ms-zoom-animation: rotate 5s ease-in-out infinite;
 
   }
   
   @keyframes rotate{
       50%{
-          transform:
-          rotate(60deg)
+        transform: translateY(-55px) rotate(60deg);
         ;
       }
   }
-  @-moz-keyframes rotate{
-    50%{
-        transform:
-        rotate(60deg)
-      ;
-    }
-  }
+
   
 
   

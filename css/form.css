@@ -55,6 +55,7 @@ input[type=email]{
 }
 .container-form .form section input[type=submit]{
     width: 50%;
+    font-size: 1rem;
     margin: 0 auto ;
     font-weight: bold;
     border-radius: 2rem;
@@ -105,4 +106,26 @@ section{
         font-weight: 5000;
         padding-bottom: 2rem;
     }
+
+    .container-form .form section input[type=submit]{
+        font-size: 0.1;
+        width: 70%;
+        transform: scale(0.6);
+    }
+
+}
+
+
+@media (min-width:600px) and (max-width:1000px){
+    .container-form .form h1{
+        font-size: 4rem;
+        font-weight: 5000;
+        padding-bottom: 2rem;
+    }
+
+    .container-form .form section input[type=submit]{
+        
+        transform: scale(0.8);
+    }
+
 }
