@@ -4,6 +4,7 @@
 .main {
     max-width: 60rem;
     margin: auto;
+    margin-bottom: 3rem;
   }
   #myBtnContainer{
     margin: 1rem auto;
@@ -18,11 +19,16 @@
     text-align: center;
   }
   
+  .content img{
+    width: 100%;
+    border-radius: 1rem 1rem 0 0 ;
+    border-bottom: solid 0.2rem rgb(255, 255, 255);
+  }
   .content h4{
-    padding: 0.4rem;
+    padding:0.3rem 0.6rem 0 0.6rem;
   }
   .content p{
-    padding: 0.4rem;
+    padding: 0.6rem;
   }
   
   .row {
@@ -38,7 +44,7 @@
   /* Create three equal columns that floats next to each other */
   .column {
     float: left;
-    width: 31%;
+    width: 33%;
     display: none; /* Hide all elements by default */
   }
   
@@ -58,7 +64,8 @@
   /* Content */
   .content {
     background-color: rgba(255, 255, 255, 0.5);
-    /* padding: 0.5rem; */
+    border-radius: 1rem 1rem 1rem 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.226);
   }
   
   /* The "show" class is added to the filtered elements */
@@ -74,6 +81,7 @@
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem;
     cursor: pointer;
+    margin: 0 0.2rem;
   }
   
   .btn:hover {
@@ -90,13 +98,17 @@
   
   @media (max-width:768px){
     .column {
-      width: 45%;
+      width: 50%;
     }
     
   }
   @media (max-width:340px){
     .column {
-      width: 93%;
+      width: 100%;
+    }
+
+    .main {
+      padding-top: 4rem;
     }
   }
   
