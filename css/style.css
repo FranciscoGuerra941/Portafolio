@@ -27,12 +27,16 @@
 body{
     padding: 0 0 0 0 ;
     margin: 0 0 0 0;
-    background: linear-gradient(0deg,rgba(255, 0, 0, 0.3),rgba(0, 119, 255, 0.5),rgba(0, 119, 255, 0.5),rgba(255, 0, 0, 0.3));
+    background: linear-gradient(0deg,rgba(83, 5, 2, 0.7),rgba(8, 47, 63, 0.808),rgba(13, 95, 102, 0.7),rgba(83, 5, 2, 0.7));
     background-size: 300% 300%;
     animation: backgroundAnimate 10s linear infinite;
     transition: background-color .5s;
     box-sizing: border-box;
 }
+
+
+
+
 @keyframes backgroundAnimate {
     0%{background-position: 0 0;}
     50%{background-position: 0 100%;}
@@ -41,6 +45,80 @@ body{
 hr{
   border: solid 0.01rem #0011ff69;
 }
+
+
+
+/*DARK MODE INICIO*/
+
+body.dark{
+  padding: 0 0 0 0 ;
+    margin: 0 0 0 0;
+    background: linear-gradient(0deg,rgba(255, 0, 0, 0.3),rgba(0, 119, 255, 0.5),rgba(0, 119, 255, 0.5),rgba(255, 0, 0, 0.3));
+    background-size: 300% 300%;
+    animation: backgroundAnimate 10s linear infinite;
+    transition: background-color .5s;
+    box-sizing: border-box;
+}
+
+.switch-mode{
+  /* display: flex; */
+  height: 2rem;
+  width: 100%;
+  /* margin:auto; */
+  /* text-align: center; */
+  justify-content: left;
+  padding-left: 1.5rem;
+}
+
+.darkModeSwitch{
+  background: #3494b1;
+  display:flex;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.darkModeSwitch span{
+  width:30px;
+  height:30px;
+  line-height:30px;
+  display:block;
+  color:#fff;
+  background: none;
+}
+
+.darkModeSwitch::after{
+  display:block;
+  background: #fffbf5;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+  top:0;
+  left:0;
+  right:unset;
+  border-radius: 3rem;
+  transition: all .5s ease;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, .5);
+  content: "";
+}
+
+.darkModeSwitch.active{
+  background: #fdd384;
+}
+.darkModeSwitch.active::after{
+  left:unset;
+  right:0;
+}
+
+
+/*DARK MODE FINAL*/
+
+
+
 
 .footer{
   position: fixed;

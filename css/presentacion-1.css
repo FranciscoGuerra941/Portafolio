@@ -73,9 +73,9 @@
 .card-1{
     min-width: 50%;
     background: linear-gradient(-25deg,rgba(0, 0, 0, 0.2),rgba(255, 255, 255, 0.2));
-    backdrop-filter: blur(0.3rem);
-    -webkit-backdrop-filter: blur(0.3rem);
-    box-shadow:5px 5px 2px 1px rgb(139, 139, 139)
+    backdrop-filter: blur(1rem);
+    -webkit-backdrop-filter: blur(1rem);
+    box-shadow:5px 5px 9px 1px rgba(255, 255, 255, 0.459)
     ,inset 2px 2px 3px 2px rgb(255, 255, 255)
     ;
     margin: 1rem auto 1rem auto;
