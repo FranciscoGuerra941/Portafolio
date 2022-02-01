@@ -6,11 +6,12 @@
     transparent, transparent 35px,
      rgb(255, 255, 255) 35px,
       rgb(255, 255, 255) 70px);
-    padding:1rem;
+    padding:2rem;
     display: flex;
     flex-wrap: wrap;
     vertical-align: center;
     align-items: center;
+
 }
 
 

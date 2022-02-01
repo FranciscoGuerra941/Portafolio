@@ -1,0 +1,141 @@
+
+    .back-marquee{
+    position: absolute;    
+    transform: translateY(10rem);
+    user-select: none;
+    z-index: -1;
+    color: rgba(0, 0, 0, 0.1);
+    }
+
+    .back-marquee:nth-child(2){
+        transform: translateY(35rem);
+
+    }
+
+
+
+
+    .back-marquee p{
+        font-size: 4rem;
+        font-weight: bold;
+        
+    }
+
+
+
+
+    .presentacion-monitor{
+        height: auto;
+        max-width: 70rem;
+        background: rgba(255, 255, 255, 0.356);
+        margin: 2rem auto;
+        /* padding: 2rem; */
+        border-radius: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+        padding: 3rem 1rem;
+
+    }
+
+    .presentacion-monitor .card-3{
+        width: 35rem;
+        height: 15rem;
+        border: 1rem rgb(255, 255, 255);
+        border-style: dashed solid;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        /* outline: solid 1rem red; */
+        /* box-shadow: inset -1rem -1rem 0 -1rem white; */
+    }
+
+    .presentacion-monitor .card-3 h1{
+        font-size: 3rem;
+        color: aliceblue;
+        text-shadow: 0.1rem 0.1rem 0.2rem rgb(126, 126, 126);
+        
+
+    }
+
+
+    .container-monitor{
+        /* display: flex;
+        align-items:flex-end;
+        justify-content: center;
+        flex-direction: column; */
+        /* margin: auto; */
+        height: 10rem;
+        width: 14rem;
+        transform: translateY(-1rem);
+        animation: levitar 5s linear infinite;
+
+    }
+
+    @keyframes levitar {
+        50%{
+            transform: translateY(1rem);
+        }
+        
+    }
+
+
+    .container-monitor .monitor{
+        height: 9rem;
+        width: 14rem;
+        border-radius: 0.5rem;
+        padding: 0.5rem 0.5rem 1.5rem 0.5rem;
+        background: rgb(148, 148, 148);
+        /* position: absolute; */
+    }
+
+    .container-monitor .monitor .logo{
+        /* position: absolute; */
+        height: 0.8rem;
+        width: 0.8rem;
+        border-radius: 50%;
+        border: 0.1rem solid rgb(255, 255, 255);
+        background: rgb(66, 66, 66);
+        margin: 0.4rem auto;
+    }
+    .container-monitor .monitor .pantalla{
+    height: 100%;
+    width: 100%;
+    border-radius: 0.5rem;
+    background: rgb(59, 59, 59);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    }
+    .container-monitor .monitor .pantalla p{
+        color: white;
+        
+    }
+
+
+    .container-monitor .soporte {
+        height: 2rem;
+        width: 14rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-monitor .soporte .palo{
+        height: 1rem;
+        width: 2rem;
+        background: rgba(75, 75, 75, 0.253);
+    }
+
+    .container-monitor .soporte .base{
+        height: 1rem;
+        width: 5rem;
+        background: rgb(148, 148, 148);
+    }

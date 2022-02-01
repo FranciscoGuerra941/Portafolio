@@ -11,6 +11,7 @@
     align-items: center;
     /* overflow: visible; */
     /* flex-direction:row-reverse; */
+
 }
 
 /* Flip Card Inicio */
@@ -19,7 +20,7 @@
     background-color: transparent;
 
     text-align: center;
-    width: 15rem;   
+    width: 14rem;   
     height: 20rem;
     background-size: cover;
     background-position: center;
@@ -72,10 +73,12 @@
     background-position: center;
     background-repeat:no-repeat;
     margin: 0 auto 0 auto;
-    width: 15rem;   
+    width: 14rem;   
     height: 20rem;
     color: black;
     bottom: 0;
+    /* position: relative; */
+    
   
     
   }
@@ -107,7 +110,7 @@
     border: solid 1px black;
     text-align: center;
     position: relative;
-    width: 15rem;
+    width: 14rem;
     height: 20rem;
     margin: 1rem auto 1rem auto;
     background: url("/Portafolio/img/fotocarnet.png");
@@ -154,7 +157,7 @@
   .card-2{
   
 
-    width: 15rem;
+    width: 14rem;
 
     text-align: center;
 

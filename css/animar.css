@@ -1,0 +1,33 @@
+.animado{
+    opacity: 0;
+    transition:all 0.5s;
+}
+
+.mostrarArriba{
+    animation:mostrarArriba 1s;
+}
+
+@keyframes mostrarArriba {
+    0%{
+        transform: translateY(2.5rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+
+.animado-inicio{
+    opacity: 0;
+    animation:animado-inicio 2s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes animado-inicio{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
