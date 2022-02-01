@@ -39,6 +39,7 @@
 .container-c .card .h1-card{
     margin: 1rem 0;
     color: rgb(10, 10, 10);
+    word-break: normal;
 }
 
 .container-c .card .parrafo{

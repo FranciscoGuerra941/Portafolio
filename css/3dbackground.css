@@ -228,7 +228,7 @@
     font-family: 'Press Start 2P';
     font-weight: 400;
     /*Create overlap*/
-    
+    word-break: normal;
     margin: auto;
     /* line-height: 0; */
     /*Animation*/
