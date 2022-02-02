@@ -8,7 +8,7 @@
     background-color: rgba(17, 17, 17, 0.95);
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 2rem;
+    padding-top: 0.5rem;
   }
   
   .sidenav a {
@@ -24,14 +24,30 @@
     color: #f1f1f1;
   }
   
-  .sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+  
+  .sidenav .container-cross{
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .sidenav .container-cross .closebtn {
+    position: relative;
+    /* top: 0; */
+    /* text-align: end; */
+    /* font-size: 36px; */
   }
   
+.switch-cross{
+  display: flex;
+  justify-content: space-around;
+  /* text-align: center; */
+  /* vertical-align: center; */
+  align-items: center;
+}
+
   #main {
     transition:
      margin-left 

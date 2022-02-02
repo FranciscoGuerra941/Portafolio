@@ -6,23 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Portafolio/css/style.css">
+    <link rel="shortcut icon" href="/Portafolio/img/favicon.svg" />
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>Listado</title>
 </head>
 
 <body>
     <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-        <div class="switch-mode">
+        <div class="switch-cross">
+            <div class="switch-mode">
 
-            <button class="darkModeSwitch" id="switch">
-                <span>
-                    <ion-icon name="sunny-outline"></ion-icon>
-                </span>
-                <span>
-                    <ion-icon name="moon-outline"></ion-icon>
-                </span>
+                <button class="darkModeSwitch" id="switch">
+                    <span>
+                        <ion-icon name="moon-outline"></ion-icon>
+                    </span>
+                    <span>
+                        <ion-icon name="sunny-outline"></ion-icon>
+                    </span>
+
+            </div>
+            <div class="container-cross">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <ion-icon name="close" class="icon-grande"></ion-icon>
+                </a>
+            </div>
+
+
+
         </div>
+
+
         <script src="/Portafolio/js/switchMode.js"></script>
 
         <a href="/Portafolio/index.html">Sobre Mi</a>
@@ -33,12 +48,14 @@
         <a href="/Portafolio/layout/3dbackground.html">No hay vuelta atras</a>
         <a href="/Portafolio/layout/formulario.html">Contacto</a>
 
-        
+
     </div>
 
 
     <div id="main">
-        <span class="header" onclick="openNav()">&#9776; menu</span>
+        <span class="header" onclick="openNav()">
+            <ion-icon name="menu" class="icon-grande"></ion-icon>
+        </span>
     </div>
 
     <script type="text/javascript" src="/Portafolio/js/sidebar.js"></script>

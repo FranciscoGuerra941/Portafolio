@@ -1,7 +1,7 @@
 .presentacion{
 
     max-width: 70rem;
-    margin: 0 auto 0 auto;
+    margin: 4rem auto 0 auto;
     background-image: repeating-linear-gradient(44deg,
     transparent, transparent 35px,
      rgb(255, 255, 255) 35px,
