@@ -1,113 +1,138 @@
 /* Inicio Galeria */
 
 /* Center website */
-.main {
-    max-width: 60rem;
+.main-gallery {
+    max-width: 70rem;
+    border-radius: 1rem;
     margin: auto;
     margin-bottom: 3rem;
+    padding-top: 2rem;
+    background: rgba(245, 245, 245, 0.794);
   }
-  #myBtnContainer{
+  .main-gallery #myBtnContainer{
     margin: 1rem auto;
     text-align: center;
   }
-  h1 {
+  .main-gallery  h1 {
     font-size: 2rem;
-    word-break: break-all;
+    word-break: normal;
     text-align: center;
   }
-  h2{
+  .main-gallery  h2{
     text-align: center;
   }
   
-  .content img{
+  .main-gallery  .content img{
+    cursor: pointer;
     width: 100%;
     border-radius: 1rem 1rem 0 0 ;
     border-bottom: solid 0.2rem rgb(255, 255, 255);
   }
-  .content h4{
+  .main-gallery  .content h4{
     padding:0.3rem 0.6rem 0 0.6rem;
   }
-  .content p{
+  .main-gallery  .content p{
     padding: 0.6rem;
   }
   
-  .row {
+  .main-gallery .row {
     margin: 1rem 0;
   }
   
   /* Add padding BETWEEN each column */
-  .row,
-  .row > .column {
+  .main-gallery .row,
+  .main-gallery  .row > .column {
     padding: 0.5rem;
   }
   
   /* Create three equal columns that floats next to each other */
-  .column {
+  .main-gallery  .column {
     float: left;
     width: 33%;
     display: none; /* Hide all elements by default */
   }
   
-  .column:hover{
+  .main-gallery  .column:hover{
     transform: scale(1.05);
     transition: 1s;
     filter:saturate(145%) brightness(110%);
   }
   
   /* Clear floats after rows */ 
-  .row:after {
+  .main-gallery .row:after {
     content: "";
     display: table;
     clear: both;
   }
   
   /* Content */
-  .content {
+  .main-gallery .content {
     background-color: rgba(255, 255, 255, 0.5);
     border-radius: 1rem 1rem 1rem 1rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgba(0, 0, 0, 0.226);
+    box-shadow: 0.4rem 0.4rem 0.35rem rgba(0, 0, 0, 0.226);
   }
   
   /* The "show" class is added to the filtered elements */
-  .show {
+  .main-gallery .show {
     display: block;
   }
   
   /* Style the buttons */
-  .btn {
+  .main-gallery .btn {
     border: none;
     outline: none;
     padding: 0.5rem 0.7rem;
     background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     cursor: pointer;
-    margin: 0 0.2rem;
+    margin: 0.2rem 0.3rem;
+
+
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05)
+    ,5px 10px 5px rgba(0, 0, 0, 0.05)
+    ,5px 10px 5px rgba(0, 0, 0, 0.05)
+    ,inset -5px -5px 7px rgba(218, 218, 218, 0.9);
+    border-radius: 50%;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    transition: 0.5s;
+
   }
+
+
   
-  .btn:hover {
+  .main-gallery .btn:hover {
     background-color: rgb(255, 255, 255);
     transform: scale(1.1);
-    box-shadow: 0 0 0 0.2rem white;
+    box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05)
+    ,2px 7px 5px rgba(0, 0, 0, 0.05)
+    ,3px 7px 5px rgba(0, 0, 0, 0.05)
+    ,inset -5px -5px 7px rgba(128, 46, 46, 0.9);
+    
   }
   
-  .btn.active {
-    background-color: #666;
+  .main-gallery .btn.active {
+    background:radial-gradient(rgb(36, 37, 37),rgba(80, 80, 80, 0.418));
+    
+    
     color: white;
+    
   }
   
   
   @media (max-width:768px){
-    .column {
+    .main-gallery .column {
       width: 50%;
     }
     
   }
   @media (max-width:340px){
-    .column {
+    .main-gallery .column {
       width: 100%;
     }
 
-    .main {
+    .main-gallery .main {
       padding-top: 4rem;
     }
   }

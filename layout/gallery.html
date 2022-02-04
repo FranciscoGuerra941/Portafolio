@@ -12,24 +12,55 @@
 </head>
 <body>
   <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="/Portafolio/index.html">Sobre Mi</a>
-    <a href="/Portafolio/layout/calculator.html">Calculadora</a>
-    <a href="/Portafolio/layout/gallery.html">Galeria</a>
-    <a href="/Portafolio/layout/listado.html">Listado</a>
-    <a href="/Portafolio/layout/3d.html">3D(only desktop) </a>
-    <a href="/Portafolio/layout/3dbackground.html">No hay vuelta atras</a>
-    <a href="/Portafolio/layout/formulario.html">Contacto</a>
+
+    <div class="switch-cross">
+        <div class="switch-mode">
+
+            <button class="darkModeSwitch" id="switch">
+                <span>
+                    <ion-icon name="moon-outline"></ion-icon>
+                </span>
+                <span>
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </span>
+
+        </div>
+        <div class="container-cross">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <ion-icon name="close" class="icon-grande"></ion-icon>
+            </a>
+        </div>
+
+
+
+    </div>
+
+
+    <script src="/Portafolio/js/switchMode.js"></script>
+
+    <ul>
+        <li><a href="/Portafolio/index.html">Sobre Mi</a></li>
+        <li><a href="/Portafolio/layout/calculator.html">Calculadora</a></li>
+        <li><a href="/Portafolio/layout/gallery.html">Galeria</a></li>
+        <li><a href="/Portafolio/layout/listado.html">Listado</a></li>
+        <li><a href="/Portafolio/layout/3d.html">3D(only desktop) </a></li>
+        <li><a href="/Portafolio/layout/3dbackground.html">No hay vuelta atras</a></li>
+        <li><a href="/Portafolio/layout/formulario.html">Contacto</a></li>
+    </ul>
+
 
 </div>
 
 
-    <div id="main">
-        <span class="header" onclick="openNav()">&#9776; menu</span>
-    </div>
-    <script src="/Portafolio/js/sidebar.js"></script>
+<div id="main">
+    <span class="header" onclick="openNav()">
+        <ion-icon name="menu" class="icon-grande"></ion-icon>
+    </span>
+</div>
 
-    <div class="main animado-inicio">
+<script type="text/javascript" src="/Portafolio/js/sidebar.js"></script>
+
+    <div class="main-gallery animado-inicio">
 
         <h1>Francisco Guerra</h1>
         <hr>
@@ -37,10 +68,10 @@
         <h2>Galeria Filtrable</h2>
         
         <div id="myBtnContainer">
-          <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-          <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-          <button class="btn" onclick="filterSelection('people')"> People</button>
-          <button class="btn" onclick="filterSelection('mecanic')"> Mechanic</button>
+          <button class="btn active" onclick="filterSelection('all')">All</button>
+          <button class="btn" onclick="filterSelection('cars')"><ion-icon name="car-outline"></ion-icon></button>
+          <button class="btn" onclick="filterSelection('people')"><ion-icon name="accessibility-outline"></ion-icon></button>
+          <button class="btn" onclick="filterSelection('mecanic')"> <ion-icon name="build-outline"></ion-icon></button>
         </div>
         
         <!-- Portfolio Gallery Grid -->

@@ -14,6 +14,10 @@
 
 }
 
+.presentacion-2 p{
+  font-size: 1.4rem;
+}
+
 /* Flip Card Inicio */
 
 .flip-card {
@@ -26,7 +30,7 @@
     background-position: center;
     background-repeat:no-repeat;
     overflow: visible;
-
+    cursor: pointer;
   
   margin: 1rem auto 1rem auto;
   /* padding: 1rem; */
@@ -119,6 +123,7 @@
     background-repeat:no-repeat;
     bottom: 0;
     border: solid 1px black;
+    cursor: pointer;
   }
   .container-slider p{
     padding: 1rem 0;
@@ -156,7 +161,7 @@
   /* CARD THUG LIFE INICIO*/
   .card-2{
   
-
+    cursor: pointer;
     width: 14rem;
 
     text-align: center;
@@ -216,7 +221,7 @@
       0%{
         transform: translateX(-10rem) translateY(-24rem);
       }100%{
-        transform: translateX(-35.5rem) translateY(-24rem);
+        transform: translateX(-35.5rem) translateY(-25rem);
       }
     }
   

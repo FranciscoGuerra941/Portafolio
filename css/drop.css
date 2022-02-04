@@ -1,0 +1,47 @@
+.drop{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: url('img/fotocarnet.jpeg');
+    background-color: blue;
+    mix-blend-mode:multiply;
+    
+    
+    background-size: contain;
+    box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.05)
+    ,15px 25px 10px rgba(0, 0, 0, 0.05)
+    ,15px 20px 20px rgba(0, 0, 0, 0.05)
+    ,inset -10px -10px 15px rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop::before{
+    content: ' ';
+    position: absolute;
+    top: 35px;
+    left: 25px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+
+.drop::after{
+    content: ' ';
+    position: absolute;
+    top: 25px;
+    left: 50px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+}
+.drop ion-icon{
+    font-size: 5em;
+    color: #444;
+    
+
+}
