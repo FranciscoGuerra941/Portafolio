@@ -1,38 +1,8 @@
-.container-glitch1 {
-    width: 100%;
-    height: 70%;
-    margin: 30vh auto;
 
-  }
 
-.glitch1 {
-    position: absolute;
-    /* top: 2rem; */
-     left: 5%; 
-    text-align: center;
-    color: #fff;
-    font-size: 2.5em;
-    letter-spacing: 0.2rem;
-    font-family: 'Press Start 2P';
-    font-weight: 400;
-    /*Create overlap*/
-    
-    margin: auto;
-    /* line-height: 0; */
-    /*Animation*/
-    
-    animation: glitch1 2.5s infinite;
-  }
+
   
-  .glitch1:nth-child(2) {
-    color: #67f3da;
-    animation: glitch2 2.5s infinite;
-  }
-  
-  .glitch1:nth-child(3) {
-    color: #f16f6f;
-    animation: glitch3 2.5s infinite;
-  }
+ 
   /*Keyframes*/
   
   @keyframes glitch1 {

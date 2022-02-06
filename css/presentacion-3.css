@@ -70,18 +70,78 @@ transition: 1s;
     font-size: 15px;
     padding: 8px 12px;
     position: absolute;
-    bottom: 8px;
-    width: 100%;
+    /* bottom: 8px; */
+    /* width: 100%; */
     text-align: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
   }
   
   /* Number text (1/3 etc) */
   .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
+    background:linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
+    linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
+    linear-gradient(336deg, rgba(0,0,255,.4), rgba(0,0,255,0) 70.71%); ;
+    color: #ffffff;
+    /* font-size: 12px; */
+    padding: 8px 4rem;
     position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
     top: 0;
+    text-shadow:0 0 0.5rem black;
+  }
+  .numbertext h1{
+    margin: 0 auto;
+    height: auto;
+    padding: 4rem;
+    width: 100%;
+    font-size: 8.5rem;
+    display: block;
+    background:linear-gradient(60deg,white 45%,black 45%);
+    mix-blend-mode: multiply;
+    animation: texto-slide-todown 2s forwards ease-in-out;
+
+  }
+
+  @keyframes texto-slide-todown{
+    0%{
+      transform: translateY(0rem);
+
+    }
+    100%{
+      transform: translateY(1.5rem);
+
+    }
+  }
+
+
+  .numbertext p{
+    background:radial-gradient(transparent, black);
+    padding: 6.5rem 4rem;
+    text-shadow:0 0 0.5rem #ffffff;
+    font-size: 2rem;
+    animation: texto-slide-toup 2s forwards ease-in-out;
+
+  }
+
+  @keyframes texto-slide-toup{
+    0%{
+      transform: translateY(0rem);
+
+    }
+    100%{
+      transform: translateY(-1.5rem);
+
+    }
   }
   
   /* The dots/bullets/indicators */
@@ -119,11 +179,106 @@ transition: 1s;
   }
   
   /* On smaller screens, decrease text size */
-  @media only screen and (max-width: 300px) {
+  /* @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 1.3rem}
+  } */
+  
+  @media (min-width:100px) and (max-width:700px){
+    .prev, .next,.text {font-size: 1.5rem}
+
+    .numbertext {
+      background:linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.4), rgba(0,0,255,0) 70.71%); ;
+      color: #ffffff;
+      /* font-size: 12px; */
+      padding: 8px 2.5rem;
+      position: absolute;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      text-shadow:0 0 0.5rem black;
+    }
+
+.numbertext h1{
+    margin: 0 auto;
+    height: auto;
+    padding: 4rem 2rem;
+    width: 100%;
+    font-size: 2.5rem;
+    display: block;
+    background:linear-gradient(60deg,white 45%,black 45%);
+    mix-blend-mode: multiply;
+    animation: texto-slide-todown 2s forwards ease-in-out;
+
   }
-  
-  
+
+
+  .numbertext p{
+    background:radial-gradient(transparent, black);
+    padding: 3.5rem 3rem;
+    text-shadow:0 0 0.5rem #ffffff;
+    font-size: 1.2rem;
+    animation: texto-slide-toup 2s forwards ease-in-out;
+
+  }
+  }
+
+
+  @media (min-width:701px) and (max-width:1100px){
+
+    .prev, .next,.text {font-size: 1.5rem}
+
+    .numbertext {
+      background:linear-gradient(217deg, rgba(255,0,0,.4), rgba(255,0,0,0) 70.71%),
+      linear-gradient(127deg, rgba(0,255,0,.4), rgba(0,255,0,0) 70.71%),
+      linear-gradient(336deg, rgba(0,0,255,.4), rgba(0,0,255,0) 70.71%); ;
+      color: #ffffff;
+      /* font-size: 12px; */
+      padding: 8px 2.5rem;
+      position: absolute;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      text-shadow:0 0 0.5rem black;
+    }
+
+.numbertext h1{
+    margin: 0 auto;
+    height: auto;
+    padding: 3rem 2rem;
+    width: 100%;
+    font-size: 4.5rem;
+    display: block;
+    background:linear-gradient(60deg,white 45%,black 45%);
+    mix-blend-mode: multiply;
+    animation: texto-slide-todown 2s forwards ease-in-out;
+
+  }
+
+
+  .numbertext p{
+    background:radial-gradient(transparent, black);
+    padding: 4.5rem 3rem;
+    text-shadow:0 0 0.5rem #ffffff;
+    font-size: 1.9rem;
+    animation: texto-slide-toup 2s forwards ease-in-out;
+
+  }
+
+  }
+
+
   /* fin slider*/
   
   
