@@ -18,10 +18,12 @@
 display: none;
 }
 .img-slide {
-    vertical-align: middle;
     height: 100vh;
     width:100%;
     object-fit: cover;
+    background-position: center;
+    /* background: url('/Portafolio/img/img1.jpg'); */
+    /* background-attachment: fixed; */
 }
   
 /* Slideshow container */
@@ -62,7 +64,9 @@ transition: 1s;
   /* On hover, add a black background color with a little bit see-through */
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
+    
   }
+ 
   
   /* Caption text */
   .text {
@@ -97,11 +101,12 @@ transition: 1s;
     right: 0;
     bottom: 0;
     top: 0;
-    text-shadow:0 0 0.5rem black;
+    text-shadow:0 0 1rem black;
   }
   .numbertext h1{
     margin: 0 auto;
     height: auto;
+    text-shadow:0 0 1rem black;
     padding: 4rem;
     width: 100%;
     font-size: 8.5rem;
@@ -111,6 +116,10 @@ transition: 1s;
     animation: texto-slide-todown 2s forwards ease-in-out;
 
   }
+
+  
+
+ 
 
   @keyframes texto-slide-todown{
     0%{
